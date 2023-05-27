@@ -1,0 +1,36 @@
+.holder {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 18px;
+  border: solid 1px #ccc;
+  background-color: white;
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 200px;
+  z-index: 2;
+  padding-top: 6px;
+}
+
+.dropdown > div {
+  border-radius: 6px;
+  border: solid 1px #ccc;
+  background-color: white;
+  padding: 6px 12px;
+}
+
+.dropdown button {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
