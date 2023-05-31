@@ -4,22 +4,22 @@ import { SelectButtonContainer } from "../containers/SelectButtonContainer";
 const data = [
   {
     label: `<span style="font-size: 32px;">Heading 1</span>`,
-    value: "7",
+    value: "<h1>",
   },
   {
     label: `<span style="font-size: 24px;">Heading 2</span>`,
-    value: "6",
+    value: "<h2>",
   },
   {
     label: `<span style="font-size: 18px;">Heading 3</span>`,
-    value: "5",
+    value: "<h3>",
   },
   {
     label: `<span style="font-size: 14px;">Paragraph</span>`,
-    value: "4",
+    value: "<p>",
   },
 ];
 
-export default function TextSizeSelect(props: any) {
-  return <SelectButtonContainer action="fontSize" data={data} />;
+export default function TextylHeading(props: any) {
+  return <SelectButtonContainer action="formatBlock" data={data} />;
 }

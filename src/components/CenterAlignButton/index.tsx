@@ -3,11 +3,11 @@ import { IconButtonContainer } from "../containers/IconButtonContainer";
 
 export default function TextylAlignCenter(props: any) {
   return (
-    <IconButtonContainer action="justifyCenter">
+    <IconButtonContainer action="justifyCenter" popover="Align center">
       {props.children || (
         <div
           style={{
-            padding: "6px 0",
+            padding: "4px 0",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",

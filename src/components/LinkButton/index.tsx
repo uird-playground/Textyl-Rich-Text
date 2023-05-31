@@ -32,7 +32,7 @@ const getSelectedLinkInfo = (range?: any) => {
 
 export default function TextylLink(props: any) {
   const [data, setData] = useState({
-    link: "https://www.tiny.cloud/",
+    link: "",
     text: "",
     tab: TABS.new,
   });
@@ -83,11 +83,11 @@ export default function TextylLink(props: any) {
     <Modal
       title="Insert/Edit Link"
       trigger={
-        <IconButtonContainer>
+        <IconButtonContainer popover="Insert/Edit Link">
           {props.children || (
             <div
               style={{
-                padding: "6px 0",
+                padding: "4px 0",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",

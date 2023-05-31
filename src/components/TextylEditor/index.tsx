@@ -1,9 +1,13 @@
 import React, { useRef, useEffect, useState } from "react";
 import styles from "./style.module.css";
 
-export default function TextylEditor() {
+export default function TextylEditor({
+  placeholder = "Start typing here...",
+}: {
+  placeholder?: string;
+}) {
   const editor = useRef<HTMLDivElement>(null);
-  const placeholder = useRef<HTMLDivElement>(null);
+  const placeholderRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (window !== undefined) {
@@ -12,29 +16,28 @@ export default function TextylEditor() {
   }, []);
 
   const onTouched = (e: any) => {
-    if (editor.current && placeholder.current) {
+    if (editor.current && placeholderRef.current) {
       if (
-        editor.current.innerText ==
-          "Write here. You can also include #hashtags." ||
+        editor.current.innerText == placeholder ||
         editor.current.innerText.length == 0
       )
-        placeholder.current.innerHTML =
-          "Write here. You can also include #hashtags.";
-      else placeholder.current.innerHTML = "";
+        placeholderRef.current.innerHTML = placeholder;
+      else placeholderRef.current.innerHTML = "";
     }
   };
 
   return (
-    <div
-      ref={editor}
-      className={styles.editor}
-      contentEditable={true}
-      spellCheck={false}
-      onKeyUp={onTouched}
-      id="textyl-editor"
-    >
-      <div className={styles.placeholder} ref={placeholder}>
-        Write here. You can also include #hashtags.
+    <div style={{ position: "relative" }}>
+      <div
+        ref={editor}
+        className={styles.editor}
+        contentEditable={true}
+        spellCheck={false}
+        onKeyUp={onTouched}
+        id="textyl-editor"
+      ></div>
+      <div className={styles.placeholder} ref={placeholderRef}>
+        {placeholder}
       </div>
     </div>
   );

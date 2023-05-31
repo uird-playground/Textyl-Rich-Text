@@ -3,32 +3,23 @@ import { IconButtonContainer } from "../containers/IconButtonContainer";
 
 export default function TextylUnderline(props: any) {
   return (
-    <IconButtonContainer action="underline">
+    <IconButtonContainer action="underline" popover="Underline">
       {props.children || (
         <div
           style={{
-            padding: "7px 0",
+            padding: "4px 0",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
           <svg
-            width="26px"
-            height="26px"
-            strokeWidth="1.5"
-            viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            color="#000000"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
           >
-            <path
-              d="M16 5v6a4 4 0 01-4 4v0a4 4 0 01-4-4V5M6 19h12"
-              stroke="#000000"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
+            <path d="M5 18h14v2H5zM6 4v6c0 3.309 2.691 6 6 6s6-2.691 6-6V4h-2v6c0 2.206-1.794 4-4 4s-4-1.794-4-4V4H6z"></path>
           </svg>
         </div>
       )}

@@ -7,7 +7,13 @@ export {
   TextylAlignLeft,
   TextylAlignRight,
   TextylAlignCenter,
-  TextSizeSelect,
+  TextylHeading,
   TextylImage,
-  TextylLink
+  TextylLink,
+  TextylHR,
+  TextylOrderedList,
+  TextylUnorderedList,
+  TextylIndent,
+  TextylOutdent,
+  TextylFontFamily,
 } from "./components";

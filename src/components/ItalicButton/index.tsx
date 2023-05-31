@@ -3,11 +3,11 @@ import { IconButtonContainer } from "../containers/IconButtonContainer";
 
 export default function TextylItalic(props: any) {
   return (
-    <IconButtonContainer action="italic">
+    <IconButtonContainer action="italic" popover="Italic">
       {props.children || (
         <div
           style={{
-            padding: "6px 0",
+            padding: "4px 0",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",

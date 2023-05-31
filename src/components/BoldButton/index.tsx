@@ -3,30 +3,23 @@ import { IconButtonContainer } from "../containers/IconButtonContainer";
 
 export default function TextylBold(props: any) {
   return (
-    <IconButtonContainer action="bold">
+    <IconButtonContainer action="bold" popover="Bold">
       {props.children || (
         <div
           style={{
-            padding: "6px 0",
+            padding: "4px 0",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
           <svg
-            width="24px"
-            height="24px"
-            strokeWidth="1.5"
-            viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            color="#000000"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
           >
-            <path
-              d="M12 11.667H8m4 0s3.333 0 3.333-3.334C15.333 5 12 5 12 5s0 0 0 0H8.6a.6.6 0 00-.6.6v6.067m4 0s4 0 4 3.666C16 19 12 19 12 19s0 0 0 0H8.6a.6.6 0 01-.6-.6v-6.733"
-              stroke="#000000"
-              strokeWidth="1.5"
-            ></path>
+            <path d="M17.061 11.22A4.46 4.46 0 0 0 18 8.5C18 6.019 15.981 4 13.5 4H6v15h8c2.481 0 4.5-2.019 4.5-4.5a4.48 4.48 0 0 0-1.439-3.28zM13.5 7c.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5H9V7h4.5zm.5 9H9v-3h5c.827 0 1.5.673 1.5 1.5S14.827 16 14 16z"></path>
           </svg>
         </div>
       )}

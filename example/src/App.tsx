@@ -7,9 +7,15 @@ import {
   TextylAlignLeft,
   TextylAlignCenter,
   TextylAlignRight,
-  TextSizeSelect,
+  TextylHeading,
   TextylImage,
   TextylLink,
+  TextylHR,
+  TextylOrderedList,
+  TextylUnorderedList,
+  TextylIndent,
+  TextylOutdent,
+  TextylFontFamily,
 } from "../../src";
 
 function App() {
@@ -31,9 +37,15 @@ function App() {
           <TextylAlignLeft />
           <TextylAlignCenter />
           <TextylAlignRight />
-          <TextSizeSelect />
+          <TextylHeading />
+          <TextylFontFamily />
           <TextylImage />
           <TextylLink />
+          <TextylHR />
+          <TextylOrderedList />
+          <TextylUnorderedList />
+          <TextylIndent />
+          <TextylOutdent />
         </div>
         <div
           style={{
@@ -42,7 +54,7 @@ function App() {
             marginTop: "150px",
           }}
         >
-          <TextylEditor />
+          <TextylEditor placeholder="Start Typing Here. you cna also include #hashtags" />
         </div>
       </div>
     </>

@@ -1,20 +1,20 @@
 .holder {
-  width: 130px;
+  min-width: 130px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-inline: 8px;
-  padding: 8px 12px;
+  padding: 4px 12px;
   border-radius: 6px;
   font-size: 18px;
-  border: solid 1px #ccc;
+  border: solid 1px black;
   background-color: white;
   position: relative;
 }
 
 .dropdown {
   position: absolute;
-  top: 38px;
+  top: 30px;
   left: 0;
   width: 200px;
   z-index: 2;
@@ -23,9 +23,9 @@
 
 .dropdown > div {
   border-radius: 6px;
-  border: solid 1px #ccc;
+  border: solid 1px black;
   background-color: white;
-  padding: 6px 12px;
+  overflow: hidden;
 }
 
 .dropdown button {
@@ -33,4 +33,15 @@
   border: none;
   width: 100%;
   text-align: left;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background-color: #ccc;
+}
+
+.selected {
+  white-space: pre;
+  font-family: sans-serif;
 }

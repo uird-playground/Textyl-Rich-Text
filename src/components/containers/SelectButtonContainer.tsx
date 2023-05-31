@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { formatDoc } from "../../services/command";
 import styles from "./SelectButtonContainerStyle.module.css";
 
@@ -10,7 +10,11 @@ export const SelectButtonContainer = ({
   data: Array<{ label: any; value: string }>;
 }) => {
   const [show, setShow] = useState(false);
-  const [selected, setSelected] = useState(data[0].value);
+  const [selected, setSelected] = useState("");
+
+  useEffect(() => {
+    selectValue(data[0].value);
+  }, []);
 
   const selectValue = (value: string) => {
     let item = document.createElement("span");
@@ -18,13 +22,16 @@ export const SelectButtonContainer = ({
     setSelected(item.innerText);
     formatDoc(action, value);
   };
+
   return (
     <div
       className={styles.holder}
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
-      <span>{selected}</span>
+      <span className={styles.selected}>
+        {selected}
+      </span>
       <svg
         width="18px"
         height="18px"
