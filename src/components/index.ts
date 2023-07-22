@@ -15,6 +15,7 @@ import TextylUnorderedList from "./ListUnorderedButton";
 import TextylIndent from "./IndentPlusButton";
 import TextylOutdent from "./IndentMinusButton";
 import TextylFontFamily from "./FontFamilySelect";
+import TextylToolbar from "./Toolbars/TextylToolbar";
 
 export {
   TextylBold,
@@ -34,4 +35,5 @@ export {
   TextylIndent,
   TextylOutdent,
   TextylFontFamily,
+  TextylToolbar,
 };

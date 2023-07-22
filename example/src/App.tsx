@@ -1,60 +1,27 @@
-import {
-  TextylBold,
-  TextylEditor,
-  TextylUnderline,
-  TextylItalic,
-  TextylStrike,
-  TextylAlignLeft,
-  TextylAlignCenter,
-  TextylAlignRight,
-  TextylHeading,
-  TextylImage,
-  TextylLink,
-  TextylHR,
-  TextylOrderedList,
-  TextylUnorderedList,
-  TextylIndent,
-  TextylOutdent,
-  TextylFontFamily,
-} from "../../src";
+import { TextylEditor, TextylToolbar } from "../../src";
 
 function App() {
+  const onChange = (value: string) => {
+    console.log(value);
+  };
   return (
     <>
-      <div>
-        <div
-          style={{
-            display: "flex",
-            gap: "3px",
-            alignItems: "center",
-            flexWrap: "wrap",
-          }}
-        >
-          <TextylBold />
-          <TextylUnderline />
-          <TextylItalic />
-          <TextylStrike />
-          <TextylAlignLeft />
-          <TextylAlignCenter />
-          <TextylAlignRight />
-          <TextylHeading />
-          <TextylFontFamily />
-          <TextylImage />
-          <TextylLink />
-          <TextylHR />
-          <TextylOrderedList />
-          <TextylUnorderedList />
-          <TextylIndent />
-          <TextylOutdent />
-        </div>
-        <div
-          style={{
-            marginInline: "auto",
-            maxWidth: "40rem",
-            marginTop: "150px",
-          }}
-        >
-          <TextylEditor placeholder="Start Typing Here. you cna also include #hashtags" />
+      <div
+        style={{
+          marginInline: "auto",
+          maxWidth: "1124px",
+          marginTop: "150px",
+          border: "solid 1px black",
+          padding: "12px",
+        }}
+      >
+        <TextylToolbar />
+        <hr />
+        <div>
+          <TextylEditor
+            onChange={onChange}
+            placeholder="Start Typing Here. you cna also include #hashtags"
+          />
         </div>
       </div>
     </>

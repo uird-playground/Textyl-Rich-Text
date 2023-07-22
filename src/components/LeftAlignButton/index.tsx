@@ -3,7 +3,7 @@ import { IconButtonContainer } from "../containers/IconButtonContainer";
 
 export default function TextylAlignLeft(props: any) {
   return (
-    <IconButtonContainer action="justifyLeft" popover="Align left">
+    <IconButtonContainer action="justifyLeft" popover={props.popover}>
       {props.children || (
         <div
           style={{

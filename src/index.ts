@@ -16,4 +16,5 @@ export {
   TextylIndent,
   TextylOutdent,
   TextylFontFamily,
+  TextylToolbar
 } from "./components";

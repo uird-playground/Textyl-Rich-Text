@@ -1,14 +1,4 @@
 .holder {
-  min-width: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-inline: 8px;
-  padding: 4px 12px;
-  border-radius: 6px;
-  font-size: 18px;
-  border: solid 1px black;
-  background-color: white;
   position: relative;
 }
 
@@ -18,7 +8,7 @@
   left: 0;
   width: 200px;
   z-index: 2;
-  padding-top: 6px;
+  padding-top: 10px;
 }
 
 .dropdown > div {
