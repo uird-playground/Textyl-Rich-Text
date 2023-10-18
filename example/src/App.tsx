@@ -1,4 +1,4 @@
-import { TextylEditor, TextylToolbar } from "../../src";
+import { TextylEditor, TextylToolbar } from "textyle";
 
 function App() {
   const onChange = (value: string) => {

@@ -1,7 +1,6 @@
 export {
   TextylBold,
   TextylUnderline,
-  TextylEditor,
   TextylItalic,
   TextylStrike,
   TextylAlignLeft,
@@ -18,3 +17,7 @@ export {
   TextylFontFamily,
   TextylToolbar
 } from "./components";
+
+import TextylEditor from "./components"
+
+export default TextylEditor 

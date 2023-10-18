@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
+    "rootDir": "src",
     "strict": true,
     "skipLibCheck": true,
     "jsx": "react",
     "module": "ESNext",
-    "declaration": true,
-    "declarationDir": "types",
     "sourceMap": true,
-    "outDir": "dist",
     "moduleResolution": "node",
-    "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
+  "include": ["src/**/*.tsx", "src/**/*.ts"],
   "exclude": [
     "dist",
     "node_modules",
+    "example",
     "src/**/*.test.tsx",
     "src/**/*.stories.tsx"
   ]

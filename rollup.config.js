@@ -4,6 +4,8 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import { terser } from "rollup-plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import postcss from "rollup-plugin-postcss";
+import autoprefixer from "autoprefixer";
 
 const packageJson = require("./package.json");
 
@@ -12,12 +14,14 @@ export default [
     input: "src/index.ts",
     output: [
       {
-        file: packageJson.main,
+        dir: packageJson.main,
+        preserveModules: true,
         format: "cjs",
         sourcemap: true,
       },
       {
-        file: packageJson.module,
+        dir: packageJson.module,
+        preserveModules: true,
         format: "esm",
         sourcemap: true,
       },
@@ -28,6 +32,12 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
+      postcss({
+        plugins: [autoprefixer()],
+        sourceMap: true,
+        extract: true,
+        minimize: true,
+      }),
     ],
     external: ["react", "react-dom", "styled-components"],
   },

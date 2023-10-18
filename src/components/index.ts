@@ -19,7 +19,6 @@ import TextylToolbar from "./Toolbars/TextylToolbar";
 
 export {
   TextylBold,
-  TextylEditor,
   TextylUnderline,
   TextylItalic,
   TextylStrike,
@@ -37,3 +36,5 @@ export {
   TextylFontFamily,
   TextylToolbar,
 };
+
+export default TextylEditor
