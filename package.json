@@ -1,6 +1,6 @@
 {
   "name": "textyle",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "description": "",
   "main": "dist/cjs",
   "module": "dist/esm",
@@ -9,7 +9,7 @@
     "build": "rollup -c --bundleConfigAsCjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Omar Mokhfi",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.0",
@@ -28,7 +28,6 @@
     "typescript-plugin-css-modules": "^5.0.2"
   },
   "dependencies": {
-    "postcss": "^8.4.31",
-    "styled-jsx": "npm:styled-jsx-for-rollup@^3.3.6"
+    "postcss": "^8.4.31"
   }
 }

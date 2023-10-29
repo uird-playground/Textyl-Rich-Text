@@ -24,7 +24,7 @@ export default function TextylEditor({
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         onChange(value);
-      }, 2000);
+      }, 1000);
     }
   };
 
@@ -47,8 +47,7 @@ export default function TextylEditor({
         className={styles.editor}
         contentEditable={true}
         spellCheck={false}
-        onKeyUp={onTouched}
-        onBlur={onTouched}
+        onInput={onTouched}
         id="textyl-editor"
       ></div>
       <div className={styles.placeholder} ref={placeholderRef}>

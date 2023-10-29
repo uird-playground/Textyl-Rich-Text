@@ -3,6 +3,7 @@
 }
 
 .container .popover {
+  all: unset;
   display: none;
   position: absolute;
   padding: 8px 12px;

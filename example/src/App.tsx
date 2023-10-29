@@ -1,4 +1,4 @@
-import { TextylEditor, TextylToolbar } from "textyle";
+import { TextylEditor, TextylToolbar } from "../../src/index";
 
 function App() {
   const onChange = (value: string) => {
@@ -20,7 +20,7 @@ function App() {
         <div>
           <TextylEditor
             onChange={onChange}
-            placeholder="Start Typing Here. you cna also include #hashtags"
+            placeholder="Start Typing Here. you can also include #hashtags"
           />
         </div>
       </div>
