@@ -6,15 +6,21 @@ let timeout: ReturnType<typeof setTimeout>;
 export default function TextylEditor({
   placeholder = "Start typing here...",
   onChange,
+  initialValue,
 }: {
   placeholder?: string;
   onChange?: (el: string) => void;
+  initialValue?: string;
 }) {
   const editor = useRef<HTMLDivElement>(null);
   const placeholderRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (window !== undefined) {
+      if (initialValue && editor.current && placeholderRef.current) {
+        placeholderRef.current.innerHTML = "";
+        editor.current.innerHTML = initialValue;
+      }
       document.execCommand("defaultParagraphSeparator", false, "p");
     }
   }, []);
