@@ -20,6 +20,7 @@ function App() {
         <div>
           <TextylEditor
             onChange={onChange}
+            initialValue="Heelo <u>there</u><p>gfdgfdgfd</p><p>ret<b>retret</b>retre</p><p><ul><li>one</li><li>two</li><li>three</li></ul></p>"
             placeholder="Start Typing Here. you can also include #hashtags"
           />
         </div>
