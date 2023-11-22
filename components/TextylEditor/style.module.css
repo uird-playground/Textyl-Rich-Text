@@ -11,13 +11,12 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 24px;
+  top: 12px;
   pointer-events: none;
   user-select: none;
   font-size: 18px;
   color: #838383;
   font-family: sans-serif;
-  
 }
 .editor p {
   margin: 8px 0px;

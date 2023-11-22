@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "rootDir": "src",
+    "rootDir": ".",
     "strict": true,
     "skipLibCheck": true,
     "jsx": "react",
@@ -12,12 +12,12 @@
     "forceConsistentCasingInFileNames": true,
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
-  "include": ["src/**/*.tsx", "src/**/*.ts"],
+  "include": ["./**/*.tsx", "./**/*.ts"],
   "exclude": [
     "dist",
     "node_modules",
     "example",
-    "src/**/*.test.tsx",
-    "src/**/*.stories.tsx"
+    "./**/*.test.tsx",
+    "./**/*.stories.tsx"
   ]
 }

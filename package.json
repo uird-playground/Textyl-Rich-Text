@@ -1,7 +1,7 @@
 {
   "name": "textyle",
-  "version": "1.0.10",
-  "description": "",
+  "version": "1.2.1",
+  "description": "A highly customizable React rich text editor with a focus on ease of use and extensibility.",
   "main": "dist/cjs",
   "module": "dist/esm",
   "types": "dist/types.d.ts",
@@ -9,11 +9,30 @@
     "build": "rollup -c --bundleConfigAsCjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Omar Mokhfi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OmarMokhfi/Textyl-Rich-Text"
+  },
+  "keywords": [
+    "react",
+    "rich text editor",
+    "textyle",
+    "wysiwyg",
+    "editor"
+  ],
+  "author": {
+    "name": "Omar Mokhfi",
+    "email": "ob.mokhfi@gmail.com",
+    "url": "https://uird.netlify.app/"
+  },
   "license": "ISC",
+  "homepage": "https://github.com/OmarMokhfi/Textyl-Rich-Text",
+  "bugs": {
+    "url": "https://github.com/OmarMokhfi/Textyl-Rich-Text/issues"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
     "@types/react": "^18.2.6",
     "autoprefixer": "^10.4.16",
