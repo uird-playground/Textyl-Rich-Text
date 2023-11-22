@@ -15,11 +15,13 @@ export default [
     output: [
       {
         dir: packageJson.main,
+        preserveModules: true,
         format: "cjs",
         sourcemap: true,
       },
       {
         dir: packageJson.module,
+        preserveModules: true,
         format: "esm",
         sourcemap: true,
       },
