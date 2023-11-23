@@ -11,17 +11,19 @@ const packageJson = require("./package.json");
 
 export default [
   {
-    input: "index.ts",
+    input: "components/index.ts",
     output: [
       {
         dir: packageJson.main,
         preserveModules: true,
+        preserveModulesRoot: "components",
         format: "cjs",
         sourcemap: true,
       },
       {
         dir: packageJson.module,
         preserveModules: true,
+        preserveModulesRoot: "components",
         format: "esm",
         sourcemap: true,
       },
@@ -42,7 +44,7 @@ export default [
     external: ["react", "react-dom", "styled-components"],
   },
   {
-    input: "index.ts",
+    input: "components/index.ts",
     output: [{ file: "dist/types.d.ts", format: "es" }],
     plugins: [dts.default()],
   },
