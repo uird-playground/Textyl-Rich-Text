@@ -16,14 +16,12 @@ export default [
       {
         dir: packageJson.main,
         preserveModules: true,
-        preserveModulesRoot: "components",
         format: "cjs",
         sourcemap: true,
       },
       {
         dir: packageJson.module,
         preserveModules: true,
-        preserveModulesRoot: "components",
         format: "esm",
         sourcemap: true,
       },
@@ -41,11 +39,17 @@ export default [
         minimize: true,
       }),
     ],
+    watch: {
+      exclude: ["node_modules/**"],
+    },
     external: ["react", "react-dom", "styled-components"],
   },
   {
     input: "components/index.ts",
     output: [{ file: "dist/types.d.ts", format: "es" }],
     plugins: [dts.default()],
+    watch: {
+      exclude: ["node_modules/**"],
+    },
   },
 ];
