@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IconButtonContainer } from "../containers/IconButtonContainer";
 import Modal from "../containers/Modal";
-import "./ImageButton.css";
+// import "./ImageButton.css";
 import { formatDoc } from "../../services/command";
 
 const getSelectedImageInfo = (range?: any) => {
@@ -159,13 +159,128 @@ export default function TextylImage(props: any) {
           gap: 6,
         }}
       >
-        <button className="textyle_image-button-cancelButton" onClick={closeModal}>
+        <button
+          className="textyle_image-button-cancelButton"
+          onClick={closeModal}
+        >
           Cancel
         </button>
         <button className="textyle_image-button-submitButton" onClick={insert}>
           Save
         </button>
       </div>
+      <style jsx>{`
+        /* Input box styles */
+
+        .textyle_image-button-input {
+          margin-top: 24px;
+        }
+
+        .textyle_image-button-input > input {
+          width: calc(100% - 24px);
+          padding: 10px;
+          border: 2px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+          color: #333;
+          transition: border-color 0.3s ease;
+        }
+
+        /* Input box focus styles */
+        .textyle_image-button-input > input:focus {
+          outline: none;
+          border-color: #007bff;
+          box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+
+        /* Placeholder text styles */
+        .textyle_image-button-input > input::placeholder {
+          color: #999;
+        }
+
+        /* Label styles */
+        .textyle_image-button-input > label {
+          font-size: 14px;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 5px;
+          display: block;
+        }
+
+        /* Error styles */
+        .textyle_image-button-input.error input {
+          border-color: #ff0000;
+        }
+
+        .textyle_image-button-input.error > label {
+          color: #ff0000;
+        }
+
+        /* Error message styles */
+        .textyle_image-button-input.error .error-message {
+          color: #ff0000;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+
+        /* Submit Button styles */
+        .textyle_image-button-submitButton {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: black;
+          color: #fff;
+          border: solid 1px black;
+          border-radius: 5px;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        /* Submit button hover styles */
+        .textyle_image-button-submitButton:hover {
+          background-color: #0056b3;
+          border: solid 1px #0056b3;
+        }
+
+        /* Submit button focus styles */
+        .textyle_image-button-submitButton:focus {
+          outline: none;
+          box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+
+        /* Submit button disabled styles */
+        .textyle_image-button-submitButton:disabled {
+          opacity: 0.7;
+          cursor: not-allowed;
+        }
+
+        /* Cancel Button styles */
+        .textyle_image-button-cancelButton {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: transparent;
+          color: black;
+          border: solid 1px black;
+          border-radius: 5px;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        /* Cancel button hover styles */
+        .textyle_image-button-cancelButton:hover {
+          background-color: black;
+          color: white;
+        }
+
+        /* Cancel button focus styles */
+        .textyle_image-button-cancelButton:focus {
+          outline: none;
+          box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+      `}</style>
     </Modal>
   );
 }

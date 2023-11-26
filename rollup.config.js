@@ -6,6 +6,8 @@ import { terser } from "rollup-plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
+import { babel } from "@rollup/plugin-babel";
 
 const packageJson = require("./package.json");
 
@@ -33,11 +35,17 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
       postcss({
-        plugins: [autoprefixer()],
-        sourceMap: true,
+        plugins: [
+          autoprefixer(),
+          cssnano({
+            preset: "default",
+          }),
+        ],
         extract: true,
         minimize: true,
+        extensions: [".css"],
       }),
+      babel({ babelHelpers: "bundled", exclude: "node_modules/**" }),
     ],
     watch: {
       exclude: ["node_modules/**"],

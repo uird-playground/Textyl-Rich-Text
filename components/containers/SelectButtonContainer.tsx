@@ -1,6 +1,6 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import { formatDoc } from "../../services/command";
-import "./SelectButtonContainerStyle.css";
+// import "./SelectButtonContainerStyle.css";
 
 export const SelectButtonContainer = ({
   action,
@@ -43,6 +43,45 @@ export const SelectButtonContainer = ({
           </div>
         </div>
       )}
+      <style jsx>{`
+        .textyle_select-button-holder {
+          position: relative;
+        }
+
+        .textyle_select-button-holder .textyle_dropdown {
+          position: absolute;
+          top: 30px;
+          left: 0;
+          width: 200px;
+          z-index: 2;
+          padding-top: 10px;
+        }
+
+        .textyle_select-button-holder .textyle_dropdown > div {
+          border-radius: 6px;
+          border: solid 1px black;
+          background-color: white;
+          overflow: hidden;
+        }
+
+        .textyle_select-button-holder .textyle_dropdown button {
+          background-color: transparent;
+          border: none;
+          width: 100%;
+          text-align: left;
+          padding: 5px 12px;
+          cursor: pointer;
+        }
+
+        .textyle_select-button-holder .textyle_dropdown button:hover {
+          background-color: #ccc;
+        }
+
+        .textyle_select-button-holder .selected {
+          white-space: pre;
+          font-family: sans-serif;
+        }
+      `}</style>
     </div>
   );
 };

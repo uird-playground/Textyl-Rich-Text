@@ -10,7 +10,8 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "types": ["react", "styled-jsx"]
   },
   "include": ["./**/*.tsx", "./**/*.ts"],
   "exclude": [

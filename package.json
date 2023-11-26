@@ -31,6 +31,7 @@
     "url": "https://github.com/OmarMokhfi/Textyl-Rich-Text/issues"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
@@ -47,6 +48,11 @@
     "typescript-plugin-css-modules": "^5.0.2"
   },
   "dependencies": {
-    "postcss": "^8.4.31"
+    "@babel/core": "^7.23.3",
+    "@types/styled-jsx": "^3.4.4",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.31",
+    "rollup-plugin-import-css": "^3.3.5",
+    "styled-jsx": "^5.1.2"
   }
 }
