@@ -1,10 +1,10 @@
 /* Input box styles */
 
-.input {
+.textyle_image-button-input {
   margin-top: 24px;
 }
 
-.input > input {
+.textyle_image-button-input > input {
   width: calc(100% - 24px);
   padding: 10px;
   border: 2px solid #ccc;
@@ -15,19 +15,19 @@
 }
 
 /* Input box focus styles */
-.input > input:focus {
+.textyle_image-button-input > input:focus {
   outline: none;
   border-color: #007bff;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
 
 /* Placeholder text styles */
-.input > input::placeholder {
+.textyle_image-button-input > input::placeholder {
   color: #999;
 }
 
 /* Label styles */
-.input > label {
+.textyle_image-button-input > label {
   font-size: 14px;
   font-weight: bold;
   color: #333;
@@ -36,23 +36,23 @@
 }
 
 /* Error styles */
-.input.error input {
+.textyle_image-button-input.error input {
   border-color: #ff0000;
 }
 
-.input.error > label {
+.textyle_image-button-input.error > label {
   color: #ff0000;
 }
 
 /* Error message styles */
-.input.error .error-message {
+.textyle_image-button-input.error .error-message {
   color: #ff0000;
   font-size: 12px;
   margin-top: 5px;
 }
 
 /* Submit Button styles */
-.submitButton {
+.textyle_image-button-submitButton {
   display: inline-block;
   padding: 10px 20px;
   background-color: black;
@@ -66,65 +66,25 @@
 }
 
 /* Submit button hover styles */
-.submitButton:hover {
+.textyle_image-button-submitButton:hover {
   background-color: #0056b3;
   border: solid 1px #0056b3;
 }
 
 /* Submit button focus styles */
-.submitButton:focus {
+.textyle_image-button-submitButton:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
 
 /* Submit button disabled styles */
-.submitButton:disabled {
+.textyle_image-button-submitButton:disabled {
   opacity: 0.7;
   cursor: not-allowed;
 }
 
-/* Radio container styles */
-.radioContainer {
-  display: inline-flex;
-  align-items: center;
-  margin-right: 10px;
-}
-
-/* Radio input styles */
-.radioContainer input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  margin-right: 7px;
-  margin-left: 0;
-  outline: none;
-  cursor: pointer;
-}
-
-.radioContainer input[type="radio"]:focus {
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
-}
-
-/* Radio input checked styles */
-.radioContainer input[type="radio"]:checked {
-  border-color: #007bff;
-  background-color: #007bff;
-}
-
-/* Radio label styles */
-.radioContainer label {
-  margin-top: 4px;
-  font-size: 16px;
-  color: #333;
-  cursor: pointer;
-}
-
 /* Cancel Button styles */
-.cancelButton {
+.textyle_image-button-cancelButton {
   display: inline-block;
   padding: 10px 20px;
   background-color: transparent;
@@ -138,13 +98,13 @@
 }
 
 /* Cancel button hover styles */
-.cancelButton:hover {
+.textyle_image-button-cancelButton:hover {
   background-color: black;
   color: white;
 }
 
 /* Cancel button focus styles */
-.cancelButton:focus {
+.textyle_image-button-cancelButton:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }

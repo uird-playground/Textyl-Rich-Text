@@ -1,6 +1,6 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import { formatDoc } from "../../services/command";
-import styles from "./SelectButtonContainerStyle.module.css";
+import "./SelectButtonContainerStyle.css";
 
 export const SelectButtonContainer = ({
   action,
@@ -25,13 +25,13 @@ export const SelectButtonContainer = ({
 
   return (
     <div
-      className={styles.holder}
+      className="textyle_select-button-holder"
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
       {trigger}
       {show && (
-        <div className={styles.dropdown}>
+        <div className="textyle_dropdown">
           <div>
             {data.map((item, index) => (
               <button

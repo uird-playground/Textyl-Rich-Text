@@ -5,7 +5,7 @@ import React, {
   useCallback,
   useLayoutEffect,
 } from "react";
-import styles from "./style.module.css";
+import "./style.css";
 
 let timeout: ReturnType<typeof setTimeout>;
 
@@ -59,14 +59,14 @@ export default function TextylEditor({
     <div style={{ position: "relative" }}>
       <div
         ref={setEditor}
-        className={styles.editor}
+        className="textyle_editor"
         contentEditable={true}
         spellCheck={false}
         onInput={onTouched}
         id="textyl-editor"
         dangerouslySetInnerHTML={{ __html: initialValue }}
       ></div>
-      <div className={styles.placeholder} ref={setPlaceholderRef}>
+      <div className="textyle_editor-placeholder" ref={setPlaceholderRef}>
         {placeholder}
       </div>
     </div>

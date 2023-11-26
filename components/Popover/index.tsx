@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import styles from "./PopoverStyle.module.css";
+import "./PopoverStyle.css";
 
 export default function Popover({
   children,
@@ -9,9 +9,9 @@ export default function Popover({
   text?: string;
 }) {
   return (
-    <div className={styles.container}>
+    <div className="textyle_popover-container">
       {children}
-      {text && <div className={styles.popover}>{text}</div>}
+      {text && <div className="popover">{text}</div>}
     </div>
   );
 }

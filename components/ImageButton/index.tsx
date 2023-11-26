@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IconButtonContainer } from "../containers/IconButtonContainer";
 import Modal from "../containers/Modal";
-import styles from "./ImageButton.module.css";
+import "./ImageButton.css";
 import { formatDoc } from "../../services/command";
 
 const getSelectedImageInfo = (range?: any) => {
@@ -122,7 +122,7 @@ export default function TextylImage(props: any) {
       showModal={showModal}
       closeModal={closeModal}
     >
-      <div className={styles.input}>
+      <div className="textyle_image-button-input">
         <label>
           Source Link <span style={{ color: "red" }}>*</span>
         </label>
@@ -133,7 +133,7 @@ export default function TextylImage(props: any) {
           onChange={changeSourceValue}
         />
       </div>
-      <div className={styles.input}>
+      <div className="textyle_image-button-input">
         <label>Image width</label>
         <input
           type="text"
@@ -142,7 +142,7 @@ export default function TextylImage(props: any) {
           onChange={changeWidthValue}
         />
       </div>
-      <div className={styles.input}>
+      <div className="textyle_image-button-input">
         <label>Alternative Text</label>
         <input
           type="text"
@@ -159,10 +159,10 @@ export default function TextylImage(props: any) {
           gap: 6,
         }}
       >
-        <button className={styles.cancelButton} onClick={closeModal}>
+        <button className="textyle_image-button-cancelButton" onClick={closeModal}>
           Cancel
         </button>
-        <button className={styles.submitButton} onClick={insert}>
+        <button className="textyle_image-button-submitButton" onClick={insert}>
           Save
         </button>
       </div>

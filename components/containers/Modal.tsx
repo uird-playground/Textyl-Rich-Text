@@ -1,5 +1,5 @@
 import React, { ReactEventHandler, ReactNode, useState } from "react";
-import styles from "./ModalStyle.module.css";
+import "./ModalStyle.css";
 
 export default function Modal({
   trigger,
@@ -20,9 +20,9 @@ export default function Modal({
     <>
       <div onClick={showModal}>{trigger}</div>
       {isOpen && (
-        <div className={styles.modal}>
-          <div className={styles.modalContainer}>
-            <div className={styles.head}>
+        <div className="textyle_modal">
+          <div className="modalContainer">
+            <div className="head">
               <p>{title}</p>
               <button onClick={closeModal}>
                 <svg width="24" height="24" viewBox="0 0 24 24">

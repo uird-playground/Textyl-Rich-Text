@@ -1,4 +1,4 @@
-.editor {
+.textyle_editor {
   border: none;
   width: 100%;
   padding: 12px 0;
@@ -6,7 +6,7 @@
   font-family: sans-serif;
   position: relative;
 }
-.placeholder {
+.textyle_editor-placeholder {
   all: unset;
   content: "";
   position: absolute;
@@ -18,10 +18,10 @@
   color: #838383;
   font-family: sans-serif;
 }
-.editor p {
+.textyle_editor p {
   margin: 8px 0px;
   line-height: 1.5;
 }
-.editor:focus {
+.textyle_editor:focus {
   outline: 0;
 }

@@ -1,8 +1,8 @@
-.holder {
+.textyle_select-button-holder {
   position: relative;
 }
 
-.dropdown {
+.textyle_select-button-holder .textyle_dropdown {
   position: absolute;
   top: 30px;
   left: 0;
@@ -11,14 +11,14 @@
   padding-top: 10px;
 }
 
-.dropdown > div {
+.textyle_select-button-holder .textyle_dropdown > div {
   border-radius: 6px;
   border: solid 1px black;
   background-color: white;
   overflow: hidden;
 }
 
-.dropdown button {
+.textyle_select-button-holder .textyle_dropdown button {
   background-color: transparent;
   border: none;
   width: 100%;
@@ -27,11 +27,11 @@
   cursor: pointer;
 }
 
-.dropdown button:hover {
+.textyle_select-button-holder .textyle_dropdown button:hover {
   background-color: #ccc;
 }
 
-.selected {
+.textyle_select-button-holder .selected {
   white-space: pre;
   font-family: sans-serif;
 }

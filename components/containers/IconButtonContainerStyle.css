@@ -1,9 +1,17 @@
-.container {
+.textyle_icon-button-holder {
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  transition: background 0.3s ease-in;
+  cursor: pointer;
   position: relative;
 }
 
-.container .popover {
-  all: unset;
+.textyle_icon-button-holder:hover {
+  background-color: #eee;
+}
+
+.textyle_icon-button-holder .popover {
   display: none;
   position: absolute;
   padding: 8px 12px;
@@ -12,18 +20,16 @@
   top: 100%;
   left: 0;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 12px;
   white-space: pre;
   margin-top: 5px;
-  font-family: sans-serif;
-  z-index: 999;
 }
 
-.container:hover .popover {
+.textyle_icon-button-holder:hover .popover {
   display: block;
 }
 
-.container .popover:before {
+.textyle_icon-button-holder .popover:before {
   content: "";
   width: 0;
   height: 0;
@@ -31,5 +37,5 @@
   border-right: 5px solid transparent;
   border-bottom: 5px solid black;
   position: absolute;
-  top: -4px;
+  top: -5px;
 }

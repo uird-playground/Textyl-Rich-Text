@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { formatDoc } from "../../services/command";
-import styles from "./IconButtonContainerStyle.module.css";
+import "./IconButtonContainerStyle.css";
 import Popover from "../Popover";
 
 export const IconButtonContainer = ({
@@ -17,7 +17,7 @@ export const IconButtonContainer = ({
   };
   return (
     <Popover text={popover}>
-      <button className={styles.holder} onClick={runAction}>
+      <button className="textyle_icon-button-holder" onClick={runAction}>
         {children}
       </button>
     </Popover>

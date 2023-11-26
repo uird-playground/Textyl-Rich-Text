@@ -1,4 +1,4 @@
-.modal {
+.textyle_modal {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.modalContainer {
+.textyle_modal .modalContainer {
   width: 480px;
   max-width: 100%;
   background-color: white;
@@ -20,7 +20,7 @@
   padding: 22px;
 }
 
-.head {
+.textyle_modal .modalContainer .head {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -28,13 +28,13 @@
   margin-bottom: 10px;
 }
 
-.head > p {
+.textyle_modal .modalContainer .head > p {
   font-weight: bold;
   font-size: 20px;
   margin: 0;
 }
 
-.head > button {
+.textyle_modal .modalContainer .head > button {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -46,6 +46,6 @@
   cursor: pointer;
 }
 
-.head button:hover {
+.textyle_modal .modalContainer .head button:hover {
   opacity: 0.7;
 }

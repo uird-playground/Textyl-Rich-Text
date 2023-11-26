@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IconButtonContainer } from "../containers/IconButtonContainer";
 import Modal from "../containers/Modal";
 import { formatDoc } from "../../services/command";
-import styles from "./LinkButton.module.css";
+import "./LinkButton.css";
 
 const TABS = {
   new: "NEW",
@@ -125,7 +125,7 @@ export default function TextylLink(props: any) {
       showModal={showModal}
       closeModal={closeModal}
     >
-      <div className={styles.input}>
+      <div className="textyle_link-button-input">
         <label>URL</label>
         <input
           type="text"
@@ -134,7 +134,7 @@ export default function TextylLink(props: any) {
           onChange={changeLinkValue}
         />
       </div>
-      <div className={styles.input}>
+      <div className="textyle_link-button-input">
         <label>Text To Display</label>
         <input
           type="text"
@@ -144,9 +144,9 @@ export default function TextylLink(props: any) {
         />
       </div>
 
-      <div className={styles.input}>
+      <div className="textyle_link-button-input">
         <label>Open Link in...</label>
-        <div className={styles.radioContainer}>
+        <div className="textyle_link-button-radioContainer">
           <input
             type="radio"
             id="new"
@@ -158,7 +158,7 @@ export default function TextylLink(props: any) {
           <label htmlFor="new">New Tab</label>
         </div>
 
-        <div className={styles.radioContainer}>
+        <div className="textyle_link-button-radioContainer">
           <input
             type="radio"
             id="current"
@@ -179,10 +179,10 @@ export default function TextylLink(props: any) {
           gap: 6,
         }}
       >
-        <button className={styles.cancelButton} onClick={closeModal}>
+        <button className="textyle_link-button-cancelButton" onClick={closeModal}>
           Cancel
         </button>
-        <button className={styles.submitButton} onClick={insert}>
+        <button className="textyle_link-button-submitButton" onClick={insert}>
           Save
         </button>
       </div>
