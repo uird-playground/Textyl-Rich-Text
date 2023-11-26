@@ -1,6 +1,6 @@
 {
   "name": "textyle",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "A highly customizable React rich text editor with a focus on ease of use and extensibility.",
   "main": "dist/cjs",
   "module": "dist/esm",
